@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundsecond">
+
+
+    <Spinner
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/months"
+        android:spinnerMode="dropdown">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя"></EditText>
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Почта"></EditText>
+
+    <Button
+        android:id="@+id/schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Контакты" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ADD"
+            android:text="Добавить"></Button>
+
+        <Button
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="DATA1"
+            android:text="Сайт"></Button>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="DATA"
+            android:text="База данных" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logotip"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:transitionName="imageTransition"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/voice"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_mic"
+
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="read"
+        android:text="Записать данные " />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="write"
+        android:text="Прочитать данные " />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+</LinearLayout>

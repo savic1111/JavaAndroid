@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".table"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="30dp"
+        android:background="#f1f1f1"
+        android:collapseColumns="1,2">
+
+        <TableRow>
+            <TextView
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Имя"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <TextView
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Почта"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <TextView
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Телефон"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Алиса"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"/>
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="sashp_savickiy@mail.ru"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"/>
+            <TextView
+                android:id="@+id/textView111"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="89299300092"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Дмитрий"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"/>
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="rezinka@mail.ru"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"/>
+            <TextView
+                android:id="@+id/textView222"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="89299300091"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"/>
+        </TableRow>
+
+
+
+
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/switchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="Показать"
+        android:background="@null"
+        android:onClick="collapse"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Button" />
+
+</LinearLayout>
